@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0">
+    <script src="./js/jquery.min.js"></script>
+    <title>World of Cryptoids | Getting started</title>
+    <meta name="description"
+        content="This guide will walk you through setting up your digital wallet, buying CrypEggs NFTs, breeding, downloading the application." />
+    <meta name="keywords" content="World of Cryptoids | Getting started" />
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/chunk-vendors.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="/css/font.css" rel="stylesheet">
+    <style>
+        .banner {
+            background: url(../img/bg_im-player.jpg) no-repeat 0 0;
+            background-size: cover;
+            position: relative;
+        }
+
+        .banner-inner {
+            width: 80vw;
+            margin: 0 auto;
+            padding-top: 7.8125vw;
+            text-align: center;
+            position: relative;
+        }
+
+        .step-indexs {
+            width: 100%;
+            height: 85%;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .step-idx {
+            flex: 1;
+            height: 100%;
+            cursor: pointer;
+        }
+
+        .step {
+            margin-top: 1.3vh;
+        }
+
+        .step-item img {
+            width: 100%;
+            display: block;
+        }
+
+        .title {
+            line-height: 1;
+            color: #e7943e;
+            font-size: 1.78vw;
+            font-weight: 800;
+            display: none;
+        }
+
+        .sub-title {
+            font-size: 1.25vw;
+        }
+
+        .player-steps .swiper-wrapper {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="contents" class="player-div">
+        <div data-v-49110692="" class="swiper-pagination">
+            <a href="/" class="header-logo">
+                <img data-v-49110692="" src="img/logo_1.8b250981.png">
+            </a>
+            <div data-v-49110692="" class="header-nav">
+                <div data-v-49110692="" class="nav-text logo-m">
+                    <img data-v-49110692=""
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHcAAAAqCAYAAACJKcSjAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAABcRAAAXEQHKJvM/AAAEhUlEQVR42u2b0XHjOAyG/9tJAboKztcA6Q5OqWB1z3ywUkHsCpJUYKeCdR70vEoFqw5iqYHVVnC6Cu4eBGccrQBRlGTZK30znowNECYNggRI5TeMjNLmkZNlafRob2mmys3YHQDwIMgex+7cNfNp7A7MDMfs3F+Y2bm/MJew504CpU0IYCGo7LM0ylvaDAAsOfns3PORA/giyP8AcGdrTGnjkT2PUdnNy/KZyNIoAZAIKqHSZtHC5Bq8YwsAT7Nzz8tTg/zBxghF7b2g8pylUTEvywxKmyXqI6PI0ujgYjNLo0RpkwDwGZVQafNksfeuIUftDpj33FpoeXwT5L9naVQ4mr8D8F2QP0DYey2idnPs202loX/y1mca58dX2+zuimhaHtdwPD3L0ihX2uwBhIxKU/SuwUdtnqXR/vjmRmmzpS/iGrAobQqUScLrqdFrhqI2bFC7V9rsOkTvBkAA/jevjV6LqP3Q5hPKOsmDGx518ovS5h+lzdrRziVhk9R4KCPICZoUz4JKSHt+lS14XyWUkb/TZ7bsAdgqbd5ohl0d1O/AUn3V5bvoxisXVLaVvi0hryg/RfoQpdASwLcrdfAa9qvYgk6duiAdWvh0AnVkK+jW7tFD1blLdFi2RuR+YP0P0DIaCypb4P2Y0Wd0clDpU6XJuTsAtyevv1EW4jHKekoc+DVFL0VhXX8LlAlQHctKheHCBvxvuaCEV4raDZfYNdW5r9VNGjTTTs42A6ath3K2xR0Hfy64KIwB7FEmWh7TLnH9UiqNnsEncmuheZKlUcwJnZdlmi13kJOCpav9c0LRx/X1hcYaM/Kg5ZnwT1gkV3UUaLho6LTnNgwaAHQX+2eEy3zzk5VLKl067b2E9Y3QsT9Nh0h9JFT/CjKvB/uDQttLyIjfHUrnyQdGj2tvDU2ivaX6webhwflWSHbMvvKei16vh7IIkJOrql4jfTj3L0F26MH+0LCJVE0WGoP/8TsdagAf8hiJXU2SW0sn59Js9QWVtOuAh4QSqQUjfql+0JBj+MyRYSso+z0IKk13wu+0vvKjzNBHOVP9BvWky0CVNv85NHtq8TC7lEjFjOwV/FK+Qj+rVcEJ2lxWNDn3m9LGtYOtH/g6Jw2JVMy1y9IoVtrkqI/4EJb74TkYKqEq0GL5GIlQkL00tI2Zz/tKrHphiCcxCgC3lxy1hFSbvnVYsVawL2kGpe/ITVA69jD2wCQo8VkMZN7vemLVF31FbozyxCRxaOvSRiK30OnjREkixAX8E1tb5yb0t0BZ5hxQHl4Xrh3I0uh2hHEHA9tf4Qqce+sYjReLcLXXJwuljT/2bzfFR1s/C7I9gB8tbS0Z2Qr9bzmtmJRzLZ6R2rTZYpQ2BwBfGXGA9jc9vTK1i4NQkO3b5g50isW16VLzHlBGfd3LmklFLuTD/VdHmzH4SfMZDjVvlka9nHJNJnKp9lwy4kJ6XKUBaVIEYz5HNhnnQq5tY1ejNClyQSUca8BTcm4gyFyX5COJIOt8z+vKZPbcLI3+HND2HUbOjOuYUuROjv8Bcs56S+C+zAAAAAAASUVORK5CYII="
+                        height="60px">
+                </div>
+                <div data-v-49110692="" class="nav-text home">HOME</div>
+                <div data-v-49110692="" class="nav-text">
+                    <span data-v-49110692="" class="have-child-before">CRYPTOIDS </span>
+                    <div data-v-49110692="" class="children">
+                        <div data-v-49110692="" class="text-span">Story</div>
+                        <div data-v-49110692="" class="text-span">Breeding</div>
+                        <div data-v-49110692="" class="text-span">Battle</div>
+                    </div>
+                </div>
+                <div data-v-49110692="" class="nav-text">
+                    <span data-v-49110692="" class="have-child-before">GAME INFO</span>
+                    <div data-v-49110692="" class="children">
+                        <div data-v-49110692="" class="text-span">Tokenomics</div>
+                        <div data-v-49110692="" class="text-span">NFT</div>
+                        <div data-v-49110692="" class="text-span">Guild</div>
+                        <div data-v-49110692="" class="text-span">Scholarship</div>
+                    </div>
+                </div>
+                <div data-v-49110692="" class="nav-text">
+                    <span data-v-49110692="" class="have-child-before">GETTING STARTED</span>
+                    <div data-v-49110692="" class="children">
+                        <div data-v-49110692="" class="text-span">Player</div>
+                        <div data-v-49110692="" class="text-span">Guild</div>
+                    </div>
+                </div>
+                <div data-v-49110692="" class="nav-text">
+                    <span data-v-49110692="" class="have-child-before">MISC</span>
+                    <div data-v-49110692="" class="children">
+                        <div data-v-49110692="" class="text-span">FAQ</div>
+                        <div data-v-49110692="" class="text-span">Whitepaper</div>
+                        <div data-v-49110692="" class="text-span">Roadmap</div>
+                    </div>
+                </div>
+                <div data-v-49110692="" class="nav-text">
+                    <span data-v-49110692="">MARKETPLACE</span>
+                </div>
+                <div data-v-49110692="" class="nav-text logo-m" style="margin-top: 50px;">
+                    <img data-v-49110692="" src="img/Follow-us-10.f4d67a64.png" width="50px" height="50px"
+                        style="margin-right: 40px;">
+                    <img data-v-49110692="" src="img/Follow-us-7.7c76ef8a.png" width="50px" height="50px">
+                </div>
+                <div data-v-49110692="" class="nav-closed">
+                    <button data-v-49110692=""></button>
+                </div>
+            </div>
+            <div data-v-49110692="" class="nav-container">
+                <nav class="nav">
+                    <ul>
+                        <li>
+                            <a href="#">CRYPTOIDS</a>
+                            <ul>
+                                <li><a href="/story.html#0">Story</a></li>
+                                <li><a href="/story.html#2">Breeding</a></li>
+                                <li><a href="/story.html#3">Battle</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">GAME INFO</a>
+                            <ul>
+                                <li><a href="sP2E.html#0">sP2E</a></li>
+                                <li><a href="/sP2E.html#1">Tokenomics</a></li>
+                                <li><a href="/sP2E.html#2">NFT</a></li>
+                                <li><a href="/sP2E.html#3">Guild &<br />Scholarship</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a>GETTING STARTED</a>
+                            <ul>
+                                <li><a href="/player.html">Player</a></li>
+                                <li><a href="/Guild.html">Guild</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">MISC</a>
+                            <ul>
+                                <li><a href="/FAQ.html">FAQ</a></li>
+                                <li><a href="https://cryptoids.gitbook.io/whitepaper/cryptoids/overview">Whitepaper</a>
+                                </li>
+                                <li><a href="/Roadmap.html">Roadmap</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#" data-to="marketURL">MARKETPLACE</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!-- <div data-v-49110692="" onclick="alert('header play logo')" class="header-play-logo"> -->
+            <a href="#" data-to="playURL">
+                <div data-v-49110692="" class="header-play-logo">
+                    <div data-v-49110692="" class="logo-p">P</div>
+                    <div data-v-49110692="" class="logo-l">L</div>
+                    <div data-v-49110692="" class="logo-a">A</div>
+                    <div data-v-49110692="" class="logo-y">Y</div>
+                    <!-- <ul class="online-ul">
+                        <li><a href="#" data-to="playURL"><img src="./img/online-1.png"></a></li>
+                        <li><a href="https://play.google.com/intl/en_us/badges/"><img src="./img/online-2.png"></a></li>
+                        <li><a href="https://developer.apple.com/app-store/marketing/guidelines/"><img src="./img/online-3.png"></a></li>
+                    </ul> -->
+                </div>
+            </a>
+            <div data-v-49110692="" class="content-mobile-header-1"><button data-v-49110692=""></button></div>
+        </div>
+        <div data-v-49110692="" class="swiper-button-next">
+            <div data-v-49110692="" class="icon"><a class="icon" href="https://bit.ly/3IGaMWG"><img data-v-49110692=""
+                        src="img/home-icon-2.8e397f7b.png"></a></div>
+            <div data-v-49110692="" class="icon"> <a class="icon" href="https://bit.ly/3GXxiJd"><img data-v-49110692=""
+                        src="img/home-icon-1.dcf9de3f.png"></a></div>
+        </div>
+    </div>
+    <div class="banner">
+        <div class="banner-inner">
+            <div class="tab">
+                <a href="javascript:;" class="on">PLAYER</a>
+                <a href="./Guild.html">GUILD</a>
+            </div>
+            <div class="player-1">
+                <img src="./img/im-player_01.png" alt="" class="step-img">
+                <div class="step-indexs">
+                    <div class="step-idx" data-index="1"></div>
+                    <div class="step-idx" data-index="2"></div>
+                    <div class="step-idx" data-index="3"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="player-con player-con-1">
+        <!-- <img src="./img/play-text-1.png" alt="" class="player-2"> -->
+        <div class="title title-1" style="display: block;">
+            INSTALL AND REGISTER METAMASK ON DESKTOP
+            <div class="sub-title">（GOOGLE CHROME ONLY）</div>
+        </div>
+        <div class="title title-2">REGISTER ON MARKETPLACE</div>
+        <div class="title title-3">
+            PREPARE 3 CRYPTOIDS TO PLAY
+            <div class="sub-title">(WAY 1: BUY & HATCH CRYPEGGS)</div>
+        </div>
+        <div class="title title-4">
+            PREPARE 3 CRYPTOIDS TO PLAY
+            <div class="sub-title">(WAY 2: BUY CRYPTOIDS DIRECTLY)</div>
+        </div>
+        <div class="title title-5">START YOUR ADVENTURE</div>
+        <div class="player-steps">
+            <div class="swiper-container-player">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href="https://metamask.io/" target="_blank"><img src="./img/im-player_01_1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_01_2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_01_3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_01_4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_01_5.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_01_6.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank" data-to="marketURL"><img src="./img/im-player_02_1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_02_2.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_02_3.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_02_4.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_02_5.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_02_6.png" />
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#" target="_blank" data-to="playURL"><img src="./img/im-player_03_1.png" /></a>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./img/im-player_03_2.png" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-play">
+        <div class="div-btn">
+            <button></button>
+            WATCH
+            <b>TEASER</b>
+        </div>
+        <a href="#" data-to="eggURL" class="nfc-btn">
+            BUY NFT
+            <b>CRYPEGGS</b>
+            <img src="../img/egg.png" alt="" />
+        </a>
+    </div>
+
+    <script type="module" src="./js/index.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/play.js"></script>
+    <script>
+
+        var swiper = new Swiper(".swiper-container-player", {
+            direction: "vertical",
+            mousewheel: {
+                eventsTarged: 'body', // 鼠标在页面中任意地方都可控制swiper
+            },
+            // loop: true,
+            // navigation: {
+            //     nextEl: '.swiperG-button-next',
+            //     prevEl: '.swiperG-button-prev',
+            // },
+            on: {
+                slideChangeTransitionStart: function () {
+                    $('.title').hide();
+                    if (this.activeIndex > 5 && this.activeIndex <= 11) {
+                        $(".step-img").attr('src', "./img/im-player_02.png")
+                        if (this.activeIndex < 8) {
+                            $('.title-2').show();
+                        } else if (this.activeIndex < 10) {
+                            $('.title-3').show();
+                        } else {
+                            $('.title-4').show();
+                        }
+                    } else if (this.activeIndex > 11) {
+                        $('.title-5').show();
+                        $(".step-img").attr('src', "./img/im-player_03.png")
+                    } else {
+                        $('.title-1').show();
+                        $(".step-img").attr('src', "./img/im-player_01.png")
+                    }
+                }
+            }
+        });
+
+
+
+        $('.step-idx').on('click', function (e) {
+            var index = parseInt(e.target.dataset.index);
+            $('.title').hide();
+            if (index === 1) {
+                swiper.slideTo(0, 1000, false)
+                $(".step-img").attr('src', "./img/im-player_01.png");
+                $('.title-1').show();
+            } else if (index === 2) {
+                swiper.slideTo(6, 1000, false)
+                $(".step-img").attr('src', "./img/im-player_02.png");
+                $('.title-2').show();
+            } else {
+                swiper.slideTo(12, 1000, false)
+                $(".step-img").attr('src', "./img/im-player_03.png");
+                $('.title-5').show();
+            }
+        })
+    </script>
+</body>
+
+</html>

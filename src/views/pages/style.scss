@@ -1,0 +1,758 @@
+.page {
+  font-family: "Maven Pro";
+  overflow: auto;
+
+  &#contents .swiper-pagination {
+    z-index: 9999;
+  }
+  .header-logo {
+    opacity: 1 !important;
+  }
+
+  .container {
+    overflow: hidden;
+    height: calc(100 * var(--vh, 1vh));
+    display: flex;
+    flex-direction: column;
+    .search_field {
+      display: block;
+    }
+    .search_field > .input-group > input.form-control {
+      display: block;
+      border: 2px solid #d8d8d8;
+      border-right: none;
+      border-top-left-radius: 15px;
+      border-bottom-left-radius: 15px;
+      z-index: 0;
+    }
+    .list_data {
+      margin-top: 5vh;
+    }
+    .search_field > .input-group > .input-group-append {
+      display: block;
+      background-color: #fff;
+    }
+    .search_field > .input-group > .input-group-append > .input-group-text {
+      border: 2px solid #d8d8d8;
+      background-color: #fff;
+      border-left: none;
+      padding: 4px;
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+    .page-header {
+      padding: 0 5.9vw calc(5.39 * var(--vh, 1vh));
+      text-align: center;
+      border-bottom: none;
+      .page-title {
+        margin: calc(10.75 * var(--vh, 1vh)) auto 0;
+        font-size: calc(7.16 * var(--vh, 1vh));
+        line-height: calc(4.3 * var(--vh, 1vh));
+        color: #fff;
+        font-weight: 900;
+      }
+      .page-subtitle {
+        margin: calc(5.87 * var(--vh, 1vh)) auto 0;
+        font-size: calc(2.4 * var(--vh, 1vh));
+        color: #000;
+        font-weight: 800;
+      }
+      .page-description {
+        margin: calc(2.39 * var(--vh, 1vh)) auto 0;
+        font-size: calc(1.9 * var(--vh, 1vh));
+        line-height: calc(2.39 * var(--vh, 1vh));
+        font-weight: 600;
+        color: #000;
+      }
+    }
+
+    .page-body {
+      position: relative;
+      flex: 1;
+      flex-basis: 0;
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      .swiper-container-breeding > .swiper-wrapper {
+        height: auto;
+      }
+      .page-body-title {
+        padding: 0 5.93vw;
+        margin-top: calc(4.63 * var(--vh, 1vh));
+        font-size: calc(2.48 * var(--vh, 1vh));
+        font-weight: bold;
+      }
+      .page-body-list {
+        margin: calc(2.91 * var(--vh, 1vh)) 0;
+        padding-left: 11.13vw;
+        font-size: calc(1.91 * var(--vh, 1vh));
+        line-height: calc(2.39 * var(--vh, 1vh));
+        font-weight: 500;
+        li {
+          margin-top: calc(2.39 * var(--vh, 1vh));
+          &:first-child {
+            margin: 0;
+          }
+        }
+      }
+
+      .page-body-text {
+        padding: 0 5.93vw;
+        margin-top: calc(2 * var(--vh, 1vh));
+        font-size: calc(1.91 * var(--vh, 1vh));
+        line-height: calc(2.39 * var(--vh, 1vh));
+        font-weight: 500;
+      }
+    }
+  }
+
+  /* story */
+  .bg-story {
+    background-color: #51389d;
+    &[data-current="2"] {
+      background-color: #39b54a;
+    }
+    &[data-current="3"] {
+      background-color: #d64d77;
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: calc(50 * var(--vh, 1vh));
+        background: url(/src/img/bg-forest.jpg) no-repeat;
+        background-size: 318.52vw calc(92.36 * var(--vh, 1vh));
+        background-position: top;
+        opacity: 0.25;
+        filter: grayscale(100%);
+        mix-blend-mode: hard-light;
+      }
+    }
+    .page-header {
+      height: calc(50 * var(--vh, 1vh));
+    }
+    .page-body {
+      background: none;
+    }
+    > .page-body {
+      height: calc(50 * var(--vh, 1vh));
+      background: url("../../img/bg-universe.jpg") no-repeat;
+      background-size: 183.24vw calc(62.7 * var(--vh, 1vh));
+      background-position: bottom;
+      transition: all 1s ease;
+
+      &[data-current="0"] {
+        background-size: 153.24vw calc(52.7 * var(--vh, 1vh));
+        background-position: top;
+      }
+      &[data-current="2"] {
+        background-image: url("../../img/bg-forest.jpg");
+        background-size: 182.22vw calc(52.84 * var(--vh, 1vh));
+        background-position: top;
+      }
+      &[data-current="3"] {
+        background: #fff;
+      }
+      .swiper-slide > .page-title {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        transform: translateY(-100%);
+        padding: 0 4.63vw calc(6.18 * var(--vh, 1vh));
+        font-size: calc(4.52 * var(--vh, 1vh));
+        line-height: calc(4.58 * var(--vh, 1vh));
+        font-weight: 800;
+        text-align: center;
+        color: #fff;
+      }
+      .cryptoid-1 {
+        position: absolute;
+        top: calc(-7.68 * var(--vh, 1vh));
+        left: 5.09vw;
+        width: calc(45.82 * var(--vh, 1vh));
+        height: calc(40.48 * var(--vh, 1vh));
+      }
+      .cryptoid-name {
+        font-size: calc(1.8 * var(--vh, 1vh));
+        margin-bottom: calc(1 * var(--vh, 1vh));
+        color: #fff;
+        font-weight: 900;
+      }
+      .cryptoid-2 {
+        position: absolute;
+        top: calc(-4.58 * var(--vh, 1vh));
+        left: -10.9vw;
+        transform: translateY(10vh);
+        transition: all 0.6s ease-in-out 0s;
+        .cryptoid-name {
+          margin-left: calc(11 * var(--vh, 1vh));
+        }
+        img {
+          width: calc(23 * var(--vh, 1vh));
+          height: calc(18.2 * var(--vh, 1vh));
+        }
+      }
+      .cryptoid-3 {
+        position: absolute;
+        top: calc(-4.58 * var(--vh, 1vh));
+        right: -5.56vw;
+        transform: translateY(10vh);
+        transition: all 0.6s ease-in-out 0.2s;
+        .cryptoid-name {
+          margin-left: calc(10 * var(--vh, 1vh));
+        }
+        img {
+          width: calc(22.29 * var(--vh, 1vh));
+          height: calc(18 * var(--vh, 1vh));
+        }
+      }
+      .cryptoid-4 {
+        position: absolute;
+        top: calc(8 * var(--vh, 1vh));
+        right: 6.574vw;
+        transform: translateY(30vh);
+        transition: all 0.6s ease-in-out 0.4s;
+        .cryptoid-name {
+          text-align: center;
+          margin-left: calc(-1 * var(--vh, 1vh));
+        }
+        img {
+          width: calc(46.68 * var(--vh, 1vh));
+          height: calc(42.63 * var(--vh, 1vh));
+        }
+      }
+
+      .swiper-slide-prev .cryptoid-4 {
+        transform: translateY(-30vh);
+      }
+
+      .swiper-slide-active {
+        .cryptoid-2,
+        .cryptoid-3,
+        .cryptoid-4 {
+          transform: none;
+        }
+      }
+    }
+  }
+
+  /* breeding */
+  .bg-breeding {
+    overflow: visible;
+    .page-header {
+      position: absolute;
+      top: 0;
+      transform: translate3d(0, -100%, 0);
+      z-index: 1;
+    }
+    .page-body {
+      // background: url("../../img/bg-forest.jpg") no-repeat;
+      // background-size: 182.22vw calc(52.84 * var(--vh, 1vh));
+      // background-position: top;
+
+      .cryptoid-1 {
+        position: absolute;
+        top: calc(6.06 * var(--vh, 1vh));
+        left: -5.37vw;
+        width: calc(14.6 * var(--vh, 1vh));
+        height: calc(12.94 * var(--vh, 1vh));
+        z-index: 2;
+      }
+      .cryptoid-2 {
+        position: absolute;
+        top: calc(5.87 * var(--vh, 1vh));
+        left: 3.7vw;
+        width: calc(18.95 * var(--vh, 1vh));
+        height: calc(13.13 * var(--vh, 1vh));
+        z-index: 1;
+      }
+      .cryptoid-3 {
+        position: absolute;
+        top: calc(-1.48 * var(--vh, 1vh));
+        left: -39.44vw;
+        width: calc(83.05 * var(--vh, 1vh));
+        height: calc(55.7 * var(--vh, 1vh));
+        z-index: 3;
+      }
+    }
+  }
+  .swiper-slide-prev .bg-breeding .page-body .cryptoid-3 {
+    transform: translateY(-10vh);
+  }
+  /* battle */
+
+  .bg-battle {
+    overflow: unset;
+    // background: #fff;
+    .page-header {
+      position: absolute;
+      height: auto;
+      top: 0;
+      // background-color: #d64d77;
+      transform: translate3d(0, calc(-50 * var(--vh, 1vh)), 0);
+      z-index: 2;
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      .page-title {
+        font-size: calc(6.2 * var(--vh, 1vh));
+        line-height: calc(6.44 * var(--vh, 1vh));
+      }
+      .page-subtitle {
+        margin-top: calc(1.67 * var(--vh, 1vh));
+      }
+    }
+    .page-body {
+      position: relative;
+      // background: #fff;
+      z-index: 3;
+    }
+  }
+  .bg-sp2e {
+    display: block;
+    height: auto;
+    overflow: unset;
+
+    .page-header {
+      background: #4a94f8;
+      // position: sticky;
+      top: 0;
+      overflow: hidden;
+      z-index: 1;
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-night.jpg") no-repeat;
+        background-size: 318.52vw calc(92.36 * var(--vh, 1vh));
+        background-position: top;
+        opacity: 0.25;
+        filter: grayscale(100%);
+        mix-blend-mode: hard-light;
+      }
+      .page-title {
+        font-size: calc(6.2 * var(--vh, 1vh));
+        line-height: calc(6.44 * var(--vh, 1vh));
+      }
+      .page-subtitle {
+        margin-top: calc(1.67 * var(--vh, 1vh));
+      }
+    }
+
+    .page-body {
+      padding: calc(4.49 * var(--vh, 1vh)) 5.93vw;
+      flex-direction: column;
+      .cryptoid-1 {
+        position: absolute;
+        top: calc(-19.24 * var(--vh, 1vh));
+        right: -24.44vw;
+        width: 55.46vw;
+        height: calc(23.44 * var(--vh, 1vh));
+        transform: rotateY(180deg);
+        z-index: 2;
+      }
+      .sp2e-text {
+        font-size: calc(2.48 * var(--vh, 1vh));
+        font-weight: bold;
+        margin: 0;
+      }
+      .sp2e-title {
+        font-size: calc(3.397 * var(--vh, 1vh));
+        line-height: calc(3.397 * var(--vh, 1vh));
+        color: #f0981a;
+        font-weight: 900;
+      }
+      .page-body-list {
+        padding-left: 5.2vw;
+      }
+    }
+  }
+  .bg-tokenomic {
+    background: #4a94f8;
+    display: block;
+    height: auto;
+
+    .page-header {
+      background: #4a94f8;
+      position: sticky;
+      top: 0;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0;
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-night.jpg") no-repeat;
+        background-size: 318.52vw calc(92.36 * var(--vh, 1vh));
+        background-position: top;
+        opacity: 0.25;
+        filter: grayscale(100%);
+        mix-blend-mode: hard-light;
+      }
+      .page-title {
+        margin: calc(25.49 * var(--vh, 1vh)) 0 calc(19.57 * var(--vh, 1vh));
+        font-size: calc(6.2 * var(--vh, 1vh));
+        line-height: calc(6.44 * var(--vh, 1vh));
+        font-weight: 800;
+      }
+      .page-subtitle {
+        margin-top: calc(1.67 * var(--vh, 1vh));
+      }
+    }
+
+    .page-body {
+      padding: calc(1 * var(--vh, 1vh)) 0 calc(9 * var(--vh, 1vh));
+      flex-direction: column;
+      .tokenomic-image {
+        position: relative;
+        display: block;
+        margin: calc(-14.13 * var(--vh, 1vh)) auto 0;
+        width: 91.39vw;
+        height: 82.97vw;
+        z-index: 1;
+      }
+    }
+  }
+  .bg-nft {
+    background: #f7941d;
+    display: block;
+    height: auto;
+
+    .page-header {
+      position: relative;
+      overflow: hidden;
+      padding: 0;
+      .page-title {
+        margin: calc(17.95 * var(--vh, 1vh)) 0 calc(20.67 * var(--vh, 1vh));
+        font-size: calc(6.2 * var(--vh, 1vh));
+        line-height: calc(6.44 * var(--vh, 1vh));
+        font-weight: 800;
+      }
+      .page-subtitle {
+        margin-top: calc(1.67 * var(--vh, 1vh));
+      }
+    }
+
+    .page-body {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-twilight.jpg") no-repeat;
+        background-size: 280vw 157.5vw;
+        background-position: top;
+        filter: grayscale(100%);
+        opacity: 0.15;
+      }
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      padding: calc(1 * var(--vh, 1vh)) 0;
+      flex-direction: column;
+      .nft-image {
+        display: block;
+        margin: calc(-17.52 * var(--vh, 1vh)) auto 0;
+        width: 83.43vw;
+        height: 94.26vw;
+        transform: translateX(-2.13vw);
+      }
+
+      .market-button-wrap {
+        margin: calc(4.821 * var(--vh, 1vh)) auto;
+      }
+      .market-button {
+        position: relative;
+        margin: auto;
+        text-align: center;
+        border: 2px solid currentColor;
+        color: #f7941d;
+        z-index: 2;
+        text-decoration: none;
+        overflow: hidden;
+        transition: all 0.3s ease 0;
+        width: 61.47vw;
+        height: 13.74vw;
+        line-height: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 13.74vw;
+        .pp {
+          display: block;
+          text-align: center;
+          top: 50%;
+          margin: 0;
+          font-size: calc(2.39 * var(--vh, 1vh));
+          font-weight: 700;
+        }
+        &:hover,
+        &:active {
+          background: #f7941d;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .bg-guild-scholarship {
+    height: auto;
+    overflow: unset;
+    .page-header {
+      background-color: #e34349;
+      z-index: 1;
+      overflow: hidden;
+      padding: 0;
+      flex-shrink: 0;
+      .page-title {
+        margin: calc(17.95 * var(--vh, 1vh)) 0 calc(20.67 * var(--vh, 1vh));
+        font-size: calc(6.2 * var(--vh, 1vh));
+        line-height: calc(6.44 * var(--vh, 1vh));
+        font-weight: 800;
+      }
+    }
+
+    .page-body {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-twilight.jpg") no-repeat;
+        background-size: 280vw 100%;
+        background-position: top;
+        filter: grayscale(100%);
+        opacity: 0.15;
+      }
+      > img {
+        position: relative;
+        z-index: 2;
+      }
+      padding: calc(1 * var(--vh, 1vh)) 0;
+      flex-direction: column;
+      .guild-scholarship-image {
+        display: block;
+        margin: calc(-17.8 * var(--vh, 1vh)) auto 0;
+        width: 68.98vw;
+        height: 134.81vw;
+      }
+
+      .cryptoid-1 {
+        display: block;
+        margin: calc(-9.93 * var(--vh, 1vh)) 0 0 -4.53vw;
+        width: calc(17.42 * var(--vh, 1vh));
+        height: calc(13.75 * var(--vh, 1vh));
+      }
+      .cryptoid-2 {
+        display: block;
+        margin: calc(-6.97 * var(--vh, 1vh)) 0 0 74.81vw;
+        width: calc(15.99 * var(--vh, 1vh));
+        height: calc(12.84 * var(--vh, 1vh));
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  .bg-player {
+    background-color: #f26c4f;
+    height: auto;
+    .page-header {
+      position: relative;
+      overflow: hidden;
+      padding: calc(12 * var(--vh, 1vh)) 4.91vw calc(6.4 * var(--vh, 1vh));
+      flex-shrink: 0;
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-castle.jpg") no-repeat;
+        background-size: 172.4vw calc(50 * var(--vh, 1vh));
+        background-position: top;
+        opacity: 0.2;
+        filter: grayscale(100%);
+        mix-blend-mode: hard-light;
+      }
+      .page-switch {
+        border: calc(0.29 * var(--vh, 1vh)) solid #ffc3a1;
+        display: flex;
+        width: 100%;
+        border-radius: calc(2.79 * var(--vh, 1vh));
+
+        .page-switch-button {
+          position: relative;
+          width: 50vw;
+          height: calc(5.01 * var(--vh, 1vh));
+          line-height: calc(5.01 * var(--vh, 1vh));
+          color: #ffc3a1;
+          text-decoration: none;
+          border-radius: calc(2.79 * var(--vh, 1vh));
+          font-size: calc(2.13 * var(--vh, 1vh));
+          font-weight: bold;
+          &:first-child {
+            margin-right: -9.72vw;
+            padding-right: 7.5vw;
+            &.active {
+              padding: 0;
+            }
+          }
+          &:last-child {
+            padding-left: 7.5vw;
+            &.active {
+              padding: 0;
+            }
+          }
+          &.active {
+            z-index: 1;
+            background-color: #ffc3a1;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .page-body {
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("../../img/bg-twilight.jpg") no-repeat;
+        background-size: 280vw 212.4vw;
+        background-position: top;
+        filter: grayscale(100%);
+        opacity: 0.15;
+      }
+      > * {
+        position: relative;
+        z-index: 2;
+      }
+      padding: calc(1 * var(--vh, 1vh)) 0;
+      .guild-scholarship-image {
+        display: block;
+        margin: calc(-17.8 * var(--vh, 1vh)) auto 0;
+        width: 68.98vw;
+        height: 134.81vw;
+      }
+
+      .cryptoid-1 {
+        display: block;
+        margin: calc(-9.93 * var(--vh, 1vh)) 0 0 -4.53vw;
+        width: calc(17.42 * var(--vh, 1vh));
+        height: calc(13.75 * var(--vh, 1vh));
+      }
+      .cryptoid-2 {
+        display: block;
+        margin: calc(-6.97 * var(--vh, 1vh)) 0 0 74.81vw;
+        width: calc(15.99 * var(--vh, 1vh));
+        height: calc(12.84 * var(--vh, 1vh));
+        transform: rotateY(180deg);
+      }
+    }
+  }
+  .bg-faq {
+    .page-header {
+      background-color: #cb4ab1;
+      .page-title {
+        font-size: calc(7.64 * var(--vh, 1vh));
+        line-height: calc(8.11 * var(--vh, 1vh));
+        font-weight: 800;
+      }
+      .page-subtitle {
+        margin-top: calc(1.1 * var(--vh, 1vh));
+        font-size: calc(3.4 * var(--vh, 1vh));
+        line-height: calc(3.63 * var(--vh, 1vh));
+        font-weight: 900;
+        color: #4becdf;
+        a {
+          color: inherit;
+        }
+      }
+    }
+  }
+}
+.swiper-container-breeding {
+  width: 100vw;
+  white-space: nowrap;
+  background-color: #fff;
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    padding: 0 4.63vw;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    transition: 300ms;
+    transform: scale(0.86);
+    &.swiper-slide-active,
+    &.swiper-slide-duplicate-active {
+      z-index: 1;
+      transform: scale(1);
+    }
+    img {
+      margin-top: calc(-1.96 * var(--vh, 1vh));
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .swiper-pagination-breeding {
+    text-align: center;
+    margin-top: calc(11.79 * var(--vh, 1vh));
+    width: auto !important;
+    cursor: pointer;
+    cursor: pointer;
+    .swiper-pagination-bullet {
+      width: calc(1.575 * var(--vh, 1vh));
+      height: calc(1.575 * var(--vh, 1vh));
+      display: inline-block;
+      background: #cfcfcf;
+      border-radius: 50%;
+      margin: 0 calc(1.19 * var(--vh, 1vh));
+      &.swiper-pagination-bullet-active {
+        background: #dc3171;
+      }
+    }
+  }
+}

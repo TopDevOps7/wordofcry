@@ -1,0 +1,39 @@
+{
+  "name": "game_website",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build:development": "vite build --mode development",
+    "build:test": "vite build --mode test",
+    "build:production": "vite build --mode production",
+    "serve": "vite preview",
+    "updatedep": "rm -f package-lock.json && rm -rf node_modules && npm i"
+  },
+  "dependencies": {
+    "@vue/compiler-sfc": "^3.2.30",
+    "amfe-flexible": "^2.2.1",
+    "bootstrap": "^4.6.0",
+    "bootstrap-vue": "^2.21.2",
+    "clipboard": "^2.0.8",
+    "jquery": "^3.6.0",
+    "js-base64": "^3.6.0",
+    "lodash": "^4.17.21",
+    "swiper": "8.0.5",
+    "vite": "^2.8.0",
+    "vite-plugin-vue2": "^1.9.3",
+    "vue": "^2.6.14",
+    "vue-layer": "^1.2.5",
+    "vue-router": "^3.5.1",
+    "vue-touch": "^2.0.0-beta.4"
+  },
+  "devDependencies": {
+    "sass": "1.49.7",
+    "vue-template-compiler": "^2.6.14"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    }
+  }
+}
