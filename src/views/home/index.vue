@@ -450,6 +450,75 @@
                   ><img src="../../img/logo/13_nft.png" alt=""
                 /></a>
               </div>
+              <div class="icon-container_mobile">
+                <div class="order-1_div">
+                  <a class="mobile-order-1" href="https://www.binance.com/en"
+                    ><img src="../../img/logo/01_bina.png" alt=""
+                  /></a>
+                  <a class="mobile-order-1" href="https://ideaology.io/"
+                    ><img src="../../img/logo/02_ide.png" alt=""
+                  /></a>
+                </div>
+                <div class="order-1_div1">
+                  <a class="mobile-order-1" href="https://metamask.io/"
+                    ><img src="../../img/logo/03_meta.png" alt=""
+                  /></a>
+                  <a class="mobile-order-1" href="https://pathdao.io/"
+                    ><img src="../../img/logo/04_path.png" alt=""
+                  /></a>
+                </div>
+                <div class="order-5_div">
+                  <a class="mobile-order-5" href="https://astraguild.io/"
+                    ><img src="../../img/logo/05_astra.png" alt=""
+                  /></a>
+                  <a class="mobile-order-5" href="https://www.certik.com/"
+                    ><img src="../../img/logo/06_cer.png" alt=""
+                  /></a>
+                </div>
+
+                <a
+                  class="half mobile-order-4"
+                  href="https://www.alphadao.financial/"
+                  ><img src="../../img/logo/08_1_alpha.png" alt=""
+                /></a>
+
+                <a
+                  class="half mobile-order-2 left-space"
+                  href="https://www.genshards.com/"
+                  ><img src="../../img/logo/08_2_gene.png" alt=""
+                /></a>
+                <a
+                  class="half mobile-order-2 right-space"
+                  href="https://nftcalendar.io/"
+                  ><img src="../../img/logo/12_nft.png" alt=""
+                /></a>
+                <div class="order-5_div2">
+                  <a class="mobile-order-5" href="https://pancakeswap.finance/"
+                    ><img src="../../img/logo/09_pancake.png" alt=""
+                  /></a>
+                  <a class="mobile-order-5" href="https://refinable.com/"
+                    ><img src="../../img/logo/07_refina.png" alt=""
+                  /></a>
+                </div>
+                <div class="order-6_div">
+                  <a class="mobile-order-6" href="https://treasureland.market/"
+                    ><img src="../../img/logo/10_tre.png" alt=""
+                  /></a>
+                  <a class="mobile-order-6" href="https://voxmagna.co/"
+                    ><img src="../../img/logo/11_vox.png" alt=""
+                  /></a>
+                </div>
+                <div class="order-6_div1">
+                  <a class="half mobile-order-6" href="https://nftcalendar.io/"
+                    ><img src="../../img/logo/14_nft.png" alt=""
+                  /></a>
+                  <a
+                    class="half half-full mobile-order-6"
+                    href="https://nftcalendar.io/"
+                    ><img src="../../img/logo/13_nft.png" alt=""
+                  /></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -512,17 +581,13 @@
                       </div>
                     </div>
                     <div class="footer-nav">
-                      <a :href="config.playURL" target="_blank">Play Now</a>
-                      <div style="margin-top: 10px; margin-bottom: 10px">
-                        <a :href="config.marketURL" target="_blank"
-                          >Marketplace</a
-                        >
-                      </div>
-                      <div style="margin-bottom: 10px">
-                        <a :href="config.eggURL" target="_blank"
-                          >Buy CrypEggs</a
-                        >
-                      </div>
+                      <!-- <a :href="config.playURL" target="_blank">Play Now</a> -->
+                      <a :href="config.marketURL" target="_blank"
+                        >MARKETPLACE</a
+                      >
+                    </div>
+                    <div class="footer-nav">
+                      <a :href="config.eggURL" target="_blank">BACK TO TOP</a>
                     </div>
                   </div>
                   <div class="right">

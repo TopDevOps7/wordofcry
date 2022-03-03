@@ -1245,6 +1245,9 @@ body {
           }
         }
       }
+      .icon-container_mobile {
+        display: none;
+      }
     }
     .words {
       margin-top: calc(50vh - 12.60417vw);
