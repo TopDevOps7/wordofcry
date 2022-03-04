@@ -679,8 +679,12 @@
                     <a class="hide-mobile" href="/TermsAndConditions.html"
                       >Terms & Conditions. Privacy Policy</a
                     >
+
                     <div class="hide-desk">
-                      <a href="/TAC">Terms & Conditions</a>
+                      <!-- <a href="/TAC">Terms & Conditions</a> -->
+                      <router-link class="text-span" to="/TAC"
+                        >Terms & Conditions</router-link
+                      >
                       <a href="/TAC">Privacy Policy</a>
                     </div>
                   </div>

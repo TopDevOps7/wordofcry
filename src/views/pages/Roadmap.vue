@@ -131,11 +131,12 @@ export default {
 }
 .line {
   width: 2px;
-  height: 100%;
+  height: 103%;
   background: #d5d5d5;
   position: absolute;
-  left: 16.67vw;
+  left: 17.6vw;
   z-index: -1;
+  top: -27px;
 }
 .time {
   width: 24.54vw;
