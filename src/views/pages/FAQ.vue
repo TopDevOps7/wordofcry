@@ -17,7 +17,7 @@
         <div class="body">
           <div class="search_field">
             <b-input-group>
-              <b-form-input></b-form-input>
+              <b-form-input v-model.lazy="search"></b-form-input>
               <b-input-group-append>
                 <b-input-group-text>
                   <b-icon icon="search"></b-icon>
@@ -93,9 +93,43 @@ export default {
     return {
       curIndex: 0,
       activeFaq: 0,
+      search: "",
       activeCatalog: 0,
       catalogs: [],
+      copycatalog: [],
     };
+  },
+  watch: {
+    search: function (value) {
+      console.log(value);
+      var that = this;
+      if (value != "") {
+        var filteredArray = [];
+        var fitercatalog = [];
+        that.catalogs = that.copycatalog;
+        that.catalogs.forEach((catalog) => {
+          if (catalog.faqs !== undefined) {
+            console.log(catalog.faqs);
+            filteredArray = catalog.faqs.filter((str) => {
+              return (
+                str.question.toLowerCase().indexOf(value.toLowerCase()) >= 0
+              );
+            });
+            let newarray = {};
+            newarray.catalogId = catalog.catalogId;
+            newarray.catalogName = catalog.catalogName;
+            newarray.faqs = filteredArray;
+            fitercatalog.push(newarray);
+            console.log(fitercatalog);
+            that.catalogs = fitercatalog;
+          }
+        });
+      } else {
+        console.log(value + "empty");
+        console.log(that.copycatalog);
+        that.catalogs = that.copycatalog;
+      }
+    },
   },
   mounted: function () {
     this.fetchCatalogs();
@@ -123,6 +157,7 @@ export default {
             catalog.faqs = [];
           });
           that.catalogs = catalogs.data;
+          that.copycatalog = catalogs.data;
         })
         .then(function () {
           that.fetchFaqs(0);
@@ -133,7 +168,6 @@ export default {
       if (!that.catalogs[index]) {
         return;
       }
-      // fetch(import.meta.env.VITE_API_ENDPOINT + "/listCatalogFaq?catalogId=" + that.catalogs[index].catalogId)
       fetch(
         envConfig.apiURL +
           "/listCatalogFaq?catalogId=" +

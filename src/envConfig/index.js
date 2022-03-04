@@ -21,10 +21,14 @@ const config = {
   },
   production: {
     ...common,
-    marketURL: 'https://market.cryptoids.world',
-    apiURL: 'https://res.cryptoids.world',
-    playURL: 'https://game.cryptoids.world/infinity/',
-    eggURL: 'https://market.cryptoids.world/purchase',
+    marketURL: 'https://market.kkchain.xyz',
+    apiURL: 'https://marketserver.kkchain.xyz',
+    playURL: 'https://game.kkchain.xyz/infinity/',
+    eggURL: 'https://market.kkchain.xyz/purchase',
+    // marketURL: 'https://market.cryptoids.world',
+    // apiURL: 'https://res.cryptoids.world',
+    // playURL: 'https://game.cryptoids.world/infinity/',
+    // eggURL: 'https://market.cryptoids.world/purchase',
   },
 };
 
