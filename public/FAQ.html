@@ -161,7 +161,7 @@
         <div class="input-group">
             <input class="form-control border-end-0 border rounded-pill" type="text" value="" id="example-search-input">
             <span class="input-group-append">
-                <button class="border border-start-0 btn-outline-secondary ms-n3" type="button">
+                <button class="border border-start-0 ms-n3" type="button">
                     <i class="fa fa-search"></i>
                 </button>
             </span>
@@ -185,12 +185,66 @@
     <script type="module" src="./js/index.js"></script>
     <script src="js/play.js"></script>
     <script>
+        let copy_catalog = [];
+        let copy_catalog_faq = [];
         $("body").on("click", ".icon-jt", function () {
             $(this).parent().next().toggle();
             $(this).toggleClass("icon-jt-up");
         })
-
         $(function () {
+            $("#example-search-input").keyup(function () {
+                var txt = $("#example-search-input").val();
+                // var results = start_search(txt);
+                var html = ''
+                console.log(txt);
+                if (txt != "") {
+                    copy_catalog.forEach(function (catalog, index) {
+                        html += "<h2 class='faq-text loading' data-id='" + catalog.catalogId + "' data-index='" + index + "'>" + catalog.catalogName + "</h2>";
+                    });
+                    $(".faq-list").html(html);
+                    console.log(copy_catalog_faq);
+                    copy_catalog_faq.forEach(function (faq, index) {
+                        console.log(faq, index)
+                        var html = "";
+                        var catalog = $(".faq-text[data-index=" + index + "]");
+                        let filteredArray = faq.data.filter((str) => {
+                            return (
+                                str.question.toLowerCase().indexOf(txt.toLowerCase()) >= 0
+                            );
+                        });
+                        filteredArray.forEach(function (faq) {
+                            html += ` <div class="box-1">
+                            <h3 class="tit">${faq.question}<em class="icon-jt"></em></h3>
+                            <p class="faq-msg">${faq.answer}</p>
+                        </div>`;
+                        });
+                        catalog.after(html);
+                        catalog.removeClass("loading")
+                    })
+
+                } else if (txt == "") {
+                    console.log("empty")
+                    copy_catalog.forEach(function (catalog, index) {
+                        html += "<h2 class='faq-text loading' data-id='" + catalog.catalogId + "' data-index='" + index + "'>" + catalog.catalogName + "</h2>";
+                    });
+                    $(".faq-list").html(html);
+                    console.log(copy_catalog_faq);
+                    copy_catalog_faq.forEach(function (faq, index) {
+                        console.log(faq, index)
+                        var html = "";
+                        var catalog = $(".faq-text[data-index=" + index + "]");
+                        faq.data.forEach(function (faq) {
+                            html += ` <div class="box-1">
+                            <h3 class="tit">${faq.question}<em class="icon-jt"></em></h3>
+                            <p class="faq-msg">${faq.answer}</p>
+                        </div>`;
+                        });
+                        catalog.after(html);
+                        catalog.removeClass("loading")
+                    })
+                }
+            });
+            var inti_al = []
             function fetchCatalogs() {
                 var that = this;
                 fetch("https://marketserver.kkchain.xyz/listCatalog")
@@ -199,6 +253,7 @@
                     })
                     .then(function (catalogs) {
                         var html = "";
+                        copy_catalog = catalogs.data;
                         catalogs.data.forEach(function (catalog, index) {
                             html += "<h2 class='faq-text loading' data-id='" + catalog.catalogId + "' data-index='" + index + "'>" + catalog.catalogName + "</h2>";
                         });
@@ -218,6 +273,7 @@
                     })
                     .then(function (faqs) {
                         var html = "";
+                        copy_catalog_faq.push(faqs);
                         faqs.data.forEach(function (faq) {
                             html += ` <div class="box-1">
                 <h3 class="tit">${faq.question}<em class="icon-jt"></em></h3>

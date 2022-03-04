@@ -717,8 +717,8 @@
                   <div class="dolls swiper-wrapper">
                     <div class="doll-body swiper-slide">
                       <a href="#" class="dolls-name"
-                        ><div>Yuki Y</div>
-                        <div>Creative Director</div></a
+                        ><div class="charter_span">Yuki Y</div>
+                        <div class="charter_text">Creative Director</div></a
                       >
                       <div class="doll-pic">
                         <a href="#"
@@ -728,8 +728,8 @@
                     </div>
                     <div class="doll-body swiper-slide">
                       <a href="#" class="dolls-name"
-                        ><div>Zeta L</div>
-                        <div>Marketing Lead</div></a
+                        ><div class="charter_span">Zeta L</div>
+                        <div class="charter_text">Marketing Lead</div></a
                       >
                       <div class="doll-pic">
                         <a href="#"
@@ -739,8 +739,8 @@
                     </div>
                     <div class="doll-body swiper-slide">
                       <a href="#" class="dolls-name"
-                        ><div>TC Chan</div>
-                        <div>CEO</div></a
+                        ><div class="charter_span">TC Chan</div>
+                        <div class="charter_text">CEO</div></a
                       >
                       <div class="doll-pic">
                         <a href="#"
@@ -750,8 +750,8 @@
                     </div>
                     <div class="doll-body swiper-slide">
                       <a href="#" class="dolls-name"
-                        ><div>Teemo B</div>
-                        <div>Game Economist</div></a
+                        ><div class="charter_span">Teemo B</div>
+                        <div class="charter_text">Game Economist</div></a
                       >
                       <div class="doll-pic">
                         <a href="#"
@@ -761,8 +761,8 @@
                     </div>
                     <div class="doll-body swiper-slide">
                       <a href="#" class="dolls-name"
-                        ><div>MaFei Y</div>
-                        <div>Game Director</div></a
+                        ><div class="charter_span">MaFei Y</div>
+                        <div class="charter_text">Game Director</div></a
                       >
                       <div class="doll-pic">
                         <a href="#"

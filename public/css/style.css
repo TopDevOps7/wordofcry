@@ -361,15 +361,23 @@
 .container > .input-group {
   padding-left: 20vw;
   padding-right: 20vw;
+  margin-top: 5vh;
+  /* padding: 20px; */
 }
 .container > .input-group > .input-group-append > button {
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
   border-left: none !important;
   border-right: 2px solid #d8d8d8 !important;
   border-top: 2px solid #d8d8d8 !important;
   border-bottom: 2px solid #d8d8d8 !important;
   background: #fff;
+  border-color: #d8d8d8 !important;
+  outline: none;
+}
+
+.container > .input-group > .input-group-append > button > .fa.fa-search {
+  color: #c3bfbf;
 }
 .border {
   border: 2px solid #d8d8d8 !important;
@@ -381,6 +389,7 @@
   border-left: 2px solid #d8d8d8 !important;
   border-top: 2px solid #d8d8d8 !important;
   border-bottom: 2px solid #d8d8d8 !important;
+  padding: 20px;
 }
 .faq-text {
   font-size: 25px;
@@ -728,7 +737,7 @@
   font-size: 2.59vh;
 }
 .full-bg .t-3 {
-  font-size: 1.85vh;
+  font-size: 1.75vh;
   max-width: 55%;
   margin: 10px auto;
 }
