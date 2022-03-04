@@ -8,7 +8,24 @@
   .header-logo {
     opacity: 1 !important;
   }
-
+  #rodamap {
+    display: block;
+  }
+  #rodamap > .body > .content > .text {
+    font-size: calc(2.48 * var(--vh, 1vh));
+    font-weight: bold;
+    color: #000;
+  }
+  #rodamap > .body > .content > .text > .game_luch_span {
+    font-size: calc(2.48 * var(--vh, 1vh));
+    font-weight: bold;
+    color: #049cb7;
+  }
+  #rodamap > .body > .time {
+    color: #000;
+    font-size: calc(1.7 * var(--vh, 1vh));
+    font-weight: 600;
+  }
   .container {
     overflow: hidden;
     padding-left: 0px;
@@ -829,6 +846,24 @@
         color: #4becdf;
         a {
           color: inherit;
+        }
+      }
+    }
+    .body {
+      display: block;
+      .list_data {
+        .module-title {
+          color: #000;
+          font-size: calc(1.9 * var(--vh, 1vh));
+          font-weight: 600;
+          text-transform: uppercase;
+        }
+        .module-body {
+          .module-name {
+            color: #000;
+            font-size: calc(2.9 * var(--vh, 1vh));
+            font-weight: 700;
+          }
         }
       }
     }

@@ -2,7 +2,7 @@
   <div>
     <div id="contents" class="Breeding-box page">
       <Header />
-      <div class="container">
+      <div class="container" id="rodamap">
         <img src="../../img/mobile_bg_roadmap.jpg" alt="" class="header" />
         <div class="body">
           <div class="line"></div>
@@ -25,53 +25,62 @@
           <div class="content">
             <img class="icon" src="../../img/egg_02.png" />
             <div class="text">
-              Game Official Launch
-<br/>$CAC Public Sale
-<br/>CrypEggs Public Sale
-<br/>World of Cryptoids Prologue
-<br/>New Feature: Free-To-Play
-<br/>New Feature: Play as Guest
-<br/>New Game Mode: Arena Season 1
+              <span class="game_luch_span">Game Official Launch</span>
+              <br />$CAC Public Sale <br />CrypEggs Public Sale <br />World of
+              Cryptoids Prologue <br />
+              <span class="game_luch_span">New Feature: Free-To-Play</span>
+              <br />
+              <span class="game_luch_span">New Feature: Play as Guest</span>
+              <br />
+              <span class="game_luch_span">New Game Mode: Arena Season 1</span>
             </div>
           </div>
           <div class="content">
             <img class="icon" src="../../img/egg_03.png" />
             <div class="text">
-              New Game Mode: Challenge
-<br/>Marketplace Update
-<br/>Staking and Liquidity Pools
-<br/>Mobile Available
-<br/>Worldwide Marketing
-<br/>World of Cryptoids Story - Chapter 1
+              <span class="game_luch_span"> New Game Mode: Challenge</span>
+              <br />Marketplace Update <br />Staking and Liquidity Pools
+              <br />Mobile Available <br />Worldwide Marketing <br />
+              <span class="game_luch_span"
+                >World of Cryptoids Story - Chapter 1</span
+              >
             </div>
           </div>
           <span class="time">2022 Q2</span>
           <div class="content">
             <img class="icon" src="../../img/egg_03.png" />
             <div class="text">
-              <br/>New Feature: Epic parts
-<br/>New Feature: Kingdom Land Sale
-<br/>New Game Mode: Kingdom
-<br/>New Feature: Max level upgrade
-<br/>World of Cryptoids Story - Chapter 2
-<br/>Staking Gamification
+              <br />
+              <span class="game_luch_span">New Feature: Epic parts</span>
+              <br />
+              <span class="game_luch_span">New Feature: Kingdom Land Sale </span
+              ><br />
+              <span class="game_luch_span">New Game Mode: Kingdom</span>
+              <br />
+              <span class="game_luch_span">New Feature: Max level upgrade </span
+              ><br />
+              <span class="game_luch_span"
+                >World of Cryptoids Story - Chapter 2</span
+              >
+              <br />Staking Gamification
             </div>
           </div>
           <span class="time">2022 Q3</span>
           <div class="content">
             <img class="icon" src="../../img/egg_04.png" />
             <div class="text">
-              New Feature: Legendary parts
-<br/>New Feature: New parts
-<br/>New Feature: Paid Upgrade
-<br/>New Feature: Reborn
-<br/>New Feature: Race Combination
-<br/>Game Platform Development
+              Additional Exchange Listings<br />
+              <span class="game_luch_span">New Feature: Legendary </span>
+              <br />
+              <span class="game_luch_span">New Feature: New parts</span>
+              <br />
+              <span class="game_luch_span">New Feature: Paid Upgrade</span
+              ><br />New Feature: Reborn <br />
+              <span class="game_luch_span">New Feature: Race Combination</span>
+              <br />
+              <span class="game_luch_span">Game Platform Development</span
+              ><br />More is yet to come!
             </div>
-          </div>
-          <div class="content">
-            <img class="icon" src="../../img/egg_02.png" />
-            <div class="text">More is yet to come!</div>
           </div>
         </div>
       </div>
