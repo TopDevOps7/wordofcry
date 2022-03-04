@@ -681,11 +681,12 @@
                     >
 
                     <div class="hide-desk">
-                      <!-- <a href="/TAC">Terms & Conditions</a> -->
                       <router-link class="text-span" to="/TAC"
                         >Terms & Conditions</router-link
                       >
-                      <a href="/TAC">Privacy Policy</a>
+                      <router-link class="text-span" to="/TAC"
+                        >Privacy Policy</router-link
+                      >
                     </div>
                   </div>
                 </div>
