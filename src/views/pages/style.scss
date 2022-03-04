@@ -12,33 +12,137 @@
     display: block;
   }
   #rodamap > .body > .content > .text {
-    font-size: calc(2.48 * var(--vh, 1vh));
+    font-size: calc(2.45 * var(--vh, 1vh));
     font-weight: bold;
     color: #000;
   }
-  #rodamap > .body > #second_child > .text {
-    line-height: 1.7;
+  #rodamap > .body > #first_child {
+    padding-top: 1vh;
+    padding-bottom: 5vh;
+    .text {
+      font-size: calc(2.47 * var(--vh, 1vh));
+      font-weight: 900;
+      color: #000;
+      line-height: 1.8;
+    }
   }
-  #rodamap > .body > #third_child > .text {
-    line-height: 1.7;
+  #rodamap > .body > #second_child {
+    padding-top: 4vh;
+    img {
+      position: relative;
+      bottom: 12vh;
+    }
+    .text {
+      .game_luch_span {
+        font-size: calc(2.45 * var(--vh, 1vh));
+        font-weight: bold;
+        color: #049cb7;
+        line-height: 1;
+        margin-top: -15px;
+      }
+      .game_luch_span1 {
+        font-size: calc(2.45 * var(--vh, 1vh));
+        font-weight: 800;
+        color: #000;
+        line-height: 1;
+        margin-top: -15px;
+      }
+    }
   }
-  #rodamap > .body > #third_child > img {
-    position: relative;
-    bottom: 34vh;
+  #rodamap > .body > #third_child {
+    padding-top: 4vh;
+    padding-bottom: 5vh;
+    img {
+      position: relative;
+      bottom: 28vh;
+    }
+    .text {
+      .game_luch_span {
+        font-size: calc(2.45 * var(--vh, 1vh));
+        font-weight: bold;
+        color: #049cb7;
+        line-height: 1;
+        margin-top: -15px;
+      }
+      .game_luch_span1 {
+        font-size: calc(2.45 * var(--vh, 1vh));
+        font-weight: 800;
+        color: #000;
+        line-height: 1;
+        margin-top: -15px;
+      }
+    }
   }
-  #rodamap > .body > #second_child > img {
-    position: relative;
-    bottom: 8vh;
+
+  #rodamap > .body > #last_second {
+    padding-top: 2.6vh;
+    padding-bottom: 5vh;
+    img {
+      position: relative;
+      bottom: 14vh;
+    }
+    .text {
+      padding-top: 0px;
+    }
+    .game_luch_span1 {
+      font-size: calc(2.45 * var(--vh, 1vh));
+      font-weight: bold;
+      color: #049cb7;
+    }
+    .game_luch_span {
+      font-size: calc(2.45 * var(--vh, 1vh));
+      font-weight: bold;
+      color: #049cb7;
+      line-height: 1;
+      margin-top: -15px;
+    }
+    .staking {
+      font-size: calc(2.45 * var(--vh, 1vh));
+      font-weight: 800;
+      color: #000;
+      line-height: 1;
+      margin-top: -12px;
+    }
   }
   #rodamap > .body > .content > .text > .game_luch_span {
     font-size: calc(2.48 * var(--vh, 1vh));
     font-weight: bold;
     color: #049cb7;
   }
+  #rodamap > .body > .content:last-child > img {
+    position: relative;
+    bottom: 20vh;
+  }
+  #rodamap > .body > .content:last-child > .text > .addition_span {
+    line-height: 1;
+    font-weight: 800;
+  }
+  #rodamap > .body > .content:last-child > .text > .more_span {
+    margin-top: -15px;
+    font-size: calc(2.45 * var(--vh, 1vh));
+    font-weight: 800;
+    color: #000;
+    line-height: 1;
+  }
+  #rodamap > .body > .content:last-child > .text > .game_luch_span {
+    font-size: calc(2.45 * var(--vh, 1vh));
+    margin-top: -10px;
+    line-height: 1;
+  }
+  #rodamap > .body > .content:last-child {
+    padding-bottom: 5vh;
+  }
   #rodamap > .body > .time {
     color: #000;
     font-size: calc(1.7 * var(--vh, 1vh));
     font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-right: 2px;
+    padding-left: 2px;
   }
   .container {
     overflow: hidden;
@@ -57,9 +161,10 @@
       display: block;
       border: 2px solid #d8d8d8;
       border-right: none;
-      border-top-left-radius: 15px;
-      border-bottom-left-radius: 15px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
       z-index: 0;
+      padding: 18px;
     }
     .list_data {
       margin-top: 5vh;
@@ -72,9 +177,17 @@
       border: 2px solid #d8d8d8;
       background-color: #fff;
       border-left: none;
-      padding: 4px;
-      border-top-right-radius: 15px;
-      border-bottom-right-radius: 15px;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+      svg {
+        font-size: 20px;
+        color: #c3bdbd;
+      }
     }
     .page-header {
       padding: 0 25px calc(3.2 * var(--vh, 1vh));

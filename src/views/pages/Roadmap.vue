@@ -7,7 +7,7 @@
         <div class="body">
           <div class="line"></div>
           <span class="time">2021 Q4</span>
-          <div class="content">
+          <div class="content" id="first_child">
             <img class="icon" src="../../img/egg_01.png" />
             <div class="text">
               CrypEggs Whitelisting
@@ -25,61 +25,73 @@
           <div class="content" id="second_child">
             <img class="icon" src="../../img/egg_02.png" />
             <div class="text">
-              <span class="game_luch_span">Game Official Launch</span>
-              <br />$CAC Public Sale <br />CrypEggs Public Sale <br />World of
-              Cryptoids Prologue <br />
-              <span class="game_luch_span">New Feature: Free-To-Play</span>
+              <p class="game_luch_span">Game Official Launch</p>
               <br />
-              <span class="game_luch_span">New Feature: Play as Guest</span>
+              <p class="game_luch_span1">$CAC Public Sale</p>
               <br />
-              <span class="game_luch_span">New Game Mode: Arena Season 1</span>
+              <p class="game_luch_span1">CrypEggs Public Sale</p>
+              <br />
+              <p class="game_luch_span1">World of Cryptoids Prologue</p>
+              <br />
+              <p class="game_luch_span">New Feature: Free-To-Play</p>
+              <br />
+              <p class="game_luch_span">New Feature: Play as Guest</p>
+              <br />
+              <p class="game_luch_span">New Game Mode: Arena Season 1</p>
             </div>
           </div>
           <div class="content" id="third_child">
             <img class="icon" src="../../img/egg_03.png" />
             <div class="text">
-              <span class="game_luch_span"> New Game Mode: Challenge</span>
-              <br />Marketplace Update <br />Staking and Liquidity Pools
-              <br />Mobile Available <br />Worldwide Marketing <br />
-              <span class="game_luch_span"
-                >World of Cryptoids Story - Chapter 1</span
-              >
+              <p class="game_luch_span">New Game Mode: Challenge</p>
+              <br />
+              <p class="game_luch_span1">Marketplace Update</p>
+              <br />
+              <p class="game_luch_span1">Staking and Liquidity Pools</p>
+              <br />
+              <p class="game_luch_span1">Mobile Available</p>
+              <br />
+              <p class="game_luch_span1">Worldwide Marketing</p>
+              <br />
+              <p class="game_luch_span">World of Cryptoids Story - Chapter 1</p>
             </div>
           </div>
           <span class="time">2022 Q2</span>
-          <div class="content">
+          <div class="content" id="last_second">
             <img class="icon" src="../../img/egg_04.png" />
             <div class="text">
+              <p class="game_luch_span1">New Feature: Epic parts</p>
               <br />
-              <span class="game_luch_span">New Feature: Epic parts</span>
+              <p class="game_luch_span">New Feature: Kingdom Land Sale</p>
               <br />
-              <span class="game_luch_span">New Feature: Kingdom Land Sale </span
-              ><br />
-              <span class="game_luch_span">New Game Mode: Kingdom</span>
+              <p class="game_luch_span">New Game Mode: Kingdom</p>
               <br />
-              <span class="game_luch_span">New Feature: Max level upgrade </span
-              ><br />
-              <span class="game_luch_span"
-                >World of Cryptoids Story - Chapter 2</span
-              >
-              <br />Staking Gamification
+              <p class="game_luch_span">New Feature: Max level upgrade</p>
+              <br />
+              <p class="game_luch_span">World of Cryptoids Story - Chapter 2</p>
+              <br />
+              <p class="staking">Staking Gamification</p>
             </div>
           </div>
           <span class="time">2022 Q3</span>
           <div class="content">
             <img class="icon" src="../../img/egg_05.png" />
             <div class="text">
-              Additional Exchange Listings<br />
-              <span class="game_luch_span">New Feature: Legendary </span>
+              <p class="addition_span">Additional Exchange Listings</p>
               <br />
-              <span class="game_luch_span">New Feature: New parts</span>
+              <p class="game_luch_span">New Feature: Legendary parts</p>
               <br />
-              <span class="game_luch_span">New Feature: Paid Upgrade</span
-              ><br />New Feature: Reborn <br />
-              <span class="game_luch_span">New Feature: Race Combination</span>
+              <p class="game_luch_span">New Feature: New parts</p>
               <br />
-              <span class="game_luch_span">Game Platform Development</span
-              ><br />More is yet to come!
+              <p class="game_luch_span">New Feature: Paid Upgrade</p>
+              <br />
+              <p class="game_luch_span">New Feature: Reborn</p>
+              <br />
+              <p class="game_luch_span">New Feature: Race Combination</p>
+              <br />
+              <p class="game_luch_span">Game Platform Development</p>
+              <br />
+              <p class="more_span">More is yet to come!</p>
             </div>
           </div>
         </div>
@@ -153,10 +165,5 @@ export default {
 
 .text p:last-child {
   margin-top: 5.56vw;
-}
-
-.text {
-  font-weight: 600;
-  line-height: 1.8;
 }
 </style>
