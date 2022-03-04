@@ -320,15 +320,14 @@
           text-align: center;
           z-index: 1;
           position: relative;
-          right: 32px;
-          bottom: 5px;
-          // width: 11vw;
+          right: 34px;
+          bottom: 3px;
         }
         > div > .checkedfield > .tooltiptext {
           background-color: #115564;
           padding: 5px;
           font-size: 1.9vw;
-          border-radius: 3px;
+          border-radius: 0px;
           display: flex;
           padding-left: 13px;
         }
@@ -371,7 +370,7 @@
           background-position: center;
         }
         > div > .checkedfield > input[type="checkbox"]:checked:after {
-          background-image: url("../../assets/1110z1/images/checked.png"),
+          background-image: url("../../assets/1110z1/images/Screenshot_3.png"),
             linear-gradient(135deg, #909295 0%, #909295 100%);
           background-size: cover;
         }
@@ -836,6 +835,7 @@
         .content-bg {
           background-size: auto calc(82.86 * var(--vh, 1vh));
           background-position: top;
+          height: 100vh;
           .dolls {
             // display: block;
             justify-content: flex-start;
@@ -1034,7 +1034,10 @@
 .with-footer-2 .body-6 .footer-1 .content-bg .footer-eggs {
   bottom: calc(-21 * var(--vh, 1vh)) !important;
 }
-
+.with-footer-2 > .content-header.content-header-6 + #contents {
+  height: 100vh;
+  overflow: hidden;
+}
 @media (max-width: 480px) and (max-aspect-ratio: 698/360) {
   #contents .words {
     // font-size: calc(7.16 * var(--vh, 1vh));
@@ -1088,10 +1091,11 @@
     margin: auto;
     width: calc(47.54 * var(--vh, 1vh));
     height: auto;
-
+    display: flex;
+    justify-content: center;
     .img-5 {
       position: static;
-      width: 100%;
+      width: 90%;
       transform: none;
     }
 

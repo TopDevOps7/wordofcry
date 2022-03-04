@@ -519,13 +519,14 @@
     background: #f7941d;
     display: block;
     height: auto;
-
+    padding-left: 0px;
+    padding-right: 0px;
     .page-header {
       position: relative;
       overflow: hidden;
       padding: 0;
       .page-title {
-        margin: calc(17.95 * var(--vh, 1vh)) 0 calc(20.67 * var(--vh, 1vh));
+        margin: calc(15.95 * var(--vh, 1vh)) 0 calc(15.67 * var(--vh, 1vh));
         font-size: calc(6.2 * var(--vh, 1vh));
         line-height: calc(6.44 * var(--vh, 1vh));
         font-weight: 800;
@@ -536,6 +537,22 @@
     }
 
     .page-body {
+      .page-body-title {
+        padding: 0 5.93vw;
+        margin-top: calc(4.63 * var(--vh, 1vh));
+        font-size: calc(2.48 * var(--vh, 1vh));
+        font-weight: bold;
+        color: #000;
+        line-height: 1.2;
+      }
+      .page-body-text {
+        padding: 0 5.93vw;
+        margin-top: calc(2 * var(--vh, 1vh));
+        font-size: calc(1.91 * var(--vh, 1vh));
+        line-height: calc(2.39 * var(--vh, 1vh));
+        font-weight: 600;
+        color: #000;
+      }
       &::before {
         content: "";
         position: absolute;
