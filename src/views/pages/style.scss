@@ -18,7 +18,7 @@
   }
   #rodamap > .body > #first_child {
     padding-top: 1vh;
-    padding-bottom: 5vh;
+    padding-bottom: 4vh;
     .text {
       font-size: calc(2.47 * var(--vh, 1vh));
       font-weight: 900;
@@ -34,7 +34,7 @@
     padding-top: 4vh;
     img {
       position: relative;
-      bottom: 12vh;
+      bottom: 5vh;
     }
     .text {
       .game_luch_span {
@@ -58,7 +58,7 @@
     padding-bottom: 5vh;
     img {
       position: relative;
-      bottom: 28vh;
+      bottom: 15vh;
     }
     .text {
       .game_luch_span {
@@ -83,7 +83,7 @@
     padding-bottom: 5vh;
     img {
       position: relative;
-      bottom: 14vh;
+      bottom: 8vh;
     }
     .text {
       padding-top: 0px;
@@ -115,7 +115,7 @@
   }
   #rodamap > .body > .content:last-child > img {
     position: relative;
-    bottom: 20vh;
+    bottom: 10vh;
   }
   #rodamap > .body > .content:last-child > .text > .addition_span {
     line-height: 1;
@@ -155,6 +155,20 @@
     height: calc(100 * var(--vh, 1vh));
     display: flex;
     flex-direction: column;
+    #terms {
+      display: block;
+      .title {
+        color: #000;
+        font-size: calc(2.8 * var(--vh, 1vh));
+        font-weight: 800;
+      }
+      .content {
+        color: #000;
+        font-size: calc(2.1 * var(--vh, 1vh));
+        font-weight: 600;
+        margin-top: 2vh;
+      }
+    }
     .page-body {
       display: grid;
     }

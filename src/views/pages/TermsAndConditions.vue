@@ -4,7 +4,7 @@
       <Header />
       <div class="container">
         <img src="../../img/mobile_bg_terms.jpg" alt="" class="header" />
-        <div class="body">
+        <div class="body" id="terms">
           <div class="title">Terms of Use</div>
           <div class="content">
             <p>
