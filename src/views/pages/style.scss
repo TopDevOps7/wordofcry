@@ -11,6 +11,8 @@
 
   .container {
     overflow: hidden;
+    padding-left: 0px;
+    padding-right: 0px;
     height: calc(100 * var(--vh, 1vh));
     display: flex;
     flex-direction: column;
@@ -326,7 +328,7 @@
         z-index: 2;
       }
       .page-title {
-        font-size: calc(4.39 * var(--vh, 1vh));
+        font-size: calc(5.39 * var(--vh, 1vh));
         line-height: calc(5.44 * var(--vh, 1vh));
       }
       .page-title > .specied {
@@ -622,21 +624,47 @@
   .bg-guild-scholarship {
     height: auto;
     overflow: unset;
+    padding-right: 0px;
+    padding-left: 0px;
     .page-header {
       background-color: #e34349;
       z-index: 1;
       overflow: hidden;
+      margin-bottom: 0px;
+      margin-top: 0px;
       padding: 0;
       flex-shrink: 0;
       .page-title {
-        margin: calc(17.95 * var(--vh, 1vh)) 0 calc(20.67 * var(--vh, 1vh));
-        font-size: calc(6.2 * var(--vh, 1vh));
+        margin: calc(17.95 * var(--vh, 1vh)) 0 calc(18.67 * var(--vh, 1vh));
+        font-size: calc(5.2 * var(--vh, 1vh));
         line-height: calc(6.44 * var(--vh, 1vh));
         font-weight: 800;
+      }
+      .page-title > .specfied {
+        margin-left: 15px;
       }
     }
 
     .page-body {
+      .page-body-title {
+        padding: 0 5.93vw;
+        margin-top: calc(4.63 * var(--vh, 1vh));
+        font-size: calc(2.48 * var(--vh, 1vh));
+        font-weight: bold;
+        color: #000;
+        line-height: 1.2;
+      }
+      .page-body-list li {
+        color: #000;
+      }
+      .page-body-text {
+        padding: 0 5.93vw;
+        margin-top: calc(2 * var(--vh, 1vh));
+        font-size: calc(1.91 * var(--vh, 1vh));
+        line-height: calc(2.39 * var(--vh, 1vh));
+        font-weight: 600;
+        color: #000;
+      }
       &::before {
         content: "";
         position: absolute;
@@ -660,7 +688,7 @@
         display: block;
         margin: calc(-17.8 * var(--vh, 1vh)) auto 0;
         width: 68.98vw;
-        height: 134.81vw;
+        height: 140vw;
       }
 
       .cryptoid-1 {

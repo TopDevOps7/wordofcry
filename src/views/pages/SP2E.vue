@@ -105,8 +105,8 @@
       <div id="section-guild" class="bg-guild-scholarship container">
         <div class="page-header">
           <h1 class="page-title">
-            GUILD<br />
-            & SCHOLARSHIP
+            GUILD <span class="specfied">&</span><br />
+            SCHOLARSHIP
           </h1>
         </div>
 
