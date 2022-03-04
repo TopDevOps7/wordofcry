@@ -353,6 +353,9 @@
       top: 0;
       overflow: hidden;
       z-index: 1;
+      .page-title {
+        margin: calc(18.75 * var(--vh, 1vh)) auto 0;
+      }
       > * {
         position: relative;
         z-index: 2;
