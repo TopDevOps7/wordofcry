@@ -326,8 +326,11 @@
         z-index: 2;
       }
       .page-title {
-        font-size: calc(5.29 * var(--vh, 1vh));
+        font-size: calc(4.39 * var(--vh, 1vh));
         line-height: calc(5.44 * var(--vh, 1vh));
+      }
+      .page-title > .specied {
+        margin-left: 10px;
       }
       .page-subtitle {
         margin-top: calc(2.67 * var(--vh, 1vh));

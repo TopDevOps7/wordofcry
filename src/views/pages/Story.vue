@@ -78,7 +78,9 @@
             <div class="swiper-slide">
               <div class="bg-battle container">
                 <div class="page-header">
-                  <h1 class="page-title">ADVENTURE & <br />ARENA</h1>
+                  <h1 class="page-title">
+                    ADVENTURE <span class="specied">&</span> <br />ARENA
+                  </h1>
                   <h2 class="page-subtitle">
                     A team of 3 Cryptoids band together to defeat monsters and
                     fight against players in a war of attrition.
