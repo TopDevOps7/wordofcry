@@ -61,6 +61,11 @@
             alt=""
             class="tokenomic-image2"
           />
+          <img
+            src="../../assets/1110z1/images/game-play2-mobile-m-left.png"
+            alt=""
+            class="tokenomic-image3"
+          />
           <div class="page-body-title">
             The dual token system of World of Cryptoids ($CGC and $CAC) will be
             used to bring a balance to the gaming ecosystem.
