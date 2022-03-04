@@ -291,7 +291,7 @@
           pointer-events: auto;
           display: flex;
           justify-content: space-between;
-          align-items: center;
+          // align-items: center;
           width: 85vw;
           height: 7vh;
         }
@@ -308,6 +308,8 @@
           background: #4d749d;
           padding: 2px;
           width: 65vw;
+          padding-top: 7px;
+          padding-bottom: 7px;
         }
         div > .addressfield > .address_area > .buttonfield {
           margin-left: 2vw;
@@ -320,8 +322,8 @@
           text-align: center;
           z-index: 1;
           position: relative;
-          right: 34px;
-          bottom: 3px;
+          left: -8.6vw;
+          bottom: 5px;
         }
         > div > .checkedfield > .tooltiptext {
           background-color: #115564;
@@ -384,11 +386,13 @@
         > div:first-child > .addressfield {
           display: grid;
           justify-content: center;
-          align-items: center;
+          // align-items: center;
         }
         > div:first-child > .addressfield > .address_area > div {
           background: #4d749d;
           padding: 2px;
+          padding-top: 7px;
+          padding-bottom: 7px;
         }
         > div:first-child > .addressfield > .address_area {
           display: flex;

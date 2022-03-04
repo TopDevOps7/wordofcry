@@ -1185,7 +1185,6 @@ export default {
           this.buttonshow = true;
           this.buttonshow1 = true;
         }, 2000);
-        // window.alert("Successfully copied");
       });
       clipboard.on("error", (e) => {
         // ("复制失败");
