@@ -16,6 +16,20 @@
     font-weight: bold;
     color: #000;
   }
+  #rodamap > .body > #second_child > .text {
+    line-height: 1.7;
+  }
+  #rodamap > .body > #third_child > .text {
+    line-height: 1.7;
+  }
+  #rodamap > .body > #third_child > img {
+    position: relative;
+    bottom: 34vh;
+  }
+  #rodamap > .body > #second_child > img {
+    position: relative;
+    bottom: 8vh;
+  }
   #rodamap > .body > .content > .text > .game_luch_span {
     font-size: calc(2.48 * var(--vh, 1vh));
     font-weight: bold;

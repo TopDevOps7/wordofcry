@@ -22,7 +22,7 @@
             </div>
           </div>
           <span class="time">2022 Q1</span>
-          <div class="content">
+          <div class="content" id="second_child">
             <img class="icon" src="../../img/egg_02.png" />
             <div class="text">
               <span class="game_luch_span">Game Official Launch</span>
@@ -35,7 +35,7 @@
               <span class="game_luch_span">New Game Mode: Arena Season 1</span>
             </div>
           </div>
-          <div class="content">
+          <div class="content" id="third_child">
             <img class="icon" src="../../img/egg_03.png" />
             <div class="text">
               <span class="game_luch_span"> New Game Mode: Challenge</span>
@@ -48,7 +48,7 @@
           </div>
           <span class="time">2022 Q2</span>
           <div class="content">
-            <img class="icon" src="../../img/egg_03.png" />
+            <img class="icon" src="../../img/egg_04.png" />
             <div class="text">
               <br />
               <span class="game_luch_span">New Feature: Epic parts</span>
@@ -67,7 +67,7 @@
           </div>
           <span class="time">2022 Q3</span>
           <div class="content">
-            <img class="icon" src="../../img/egg_04.png" />
+            <img class="icon" src="../../img/egg_05.png" />
             <div class="text">
               Additional Exchange Listings<br />
               <span class="game_luch_span">New Feature: Legendary </span>
