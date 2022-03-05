@@ -87,8 +87,8 @@
             width: calc(6.59 * var(--vh, 1vh));
             height: calc(6.59 * var(--vh, 1vh));
 
-            &:first-child {
-              margin-right: calc(3.1 * var(--vh, 1vh));
+            &:last-child {
+              margin-left: calc(3.1 * var(--vh, 1vh));
             }
           }
         }
