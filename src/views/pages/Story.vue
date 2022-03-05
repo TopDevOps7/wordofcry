@@ -112,6 +112,33 @@
                       <div class="swiper-slide">
                         <img src="../../img/pink_img_03.jpg" alt="" />
                       </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_01.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_02.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_03.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_01.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_02.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_03.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_01.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_02.jpg" alt="" />
+                      </div>
+                      <div class="swiper-slide">
+                        <img src="../../img/pink_img_03.jpg" alt="" />
+                      </div>
                     </div>
                     <div data-v-49110692="" class="swiper-button-next">
                       <div data-v-49110692="" class="icon">

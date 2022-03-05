@@ -7,9 +7,7 @@
           <img src="../../img/mobile_bg_player.jpg" alt="" />
           <div class="tabs">
             <div class="tab-item active">PLAYER</div>
-            <router-link class="tab-item" to="/guild"
-              >GUILD</router-link
-            >
+            <router-link class="tab-item" to="/guild">GUILD</router-link>
           </div>
           <div class="step">
             <img v-if="step === 1" src="../../img/tab_01.png" alt="" />
@@ -24,7 +22,9 @@
         </div>
         <div class="body">
           <div class="step-one" v-if="step === 1">
-            <img src="../../img/01_1.jpg" alt="" />
+            <a href="https://metamask.io/" target="_blank"
+              ><img src="../../img/01_1.jpg" alt=""
+            /></a>
             <img src="../../img/01_2.jpg" alt="" />
             <img src="../../img/01_3.jpg" alt="" />
             <img src="../../img/01_4.jpg" alt="" />
@@ -32,16 +32,23 @@
             <img src="../../img/01_6.jpg" alt="" />
           </div>
           <div class="step-two" v-else-if="step === 2">
-            <img src="../../img/02_1.jpg" alt="" />
+            <a
+              href="https://market.cryptoids.world/?c=&p="
+              target="_blank"
+              data-to="marketURL"
+              ><img src="../../img/02_1.jpg" alt=""
+            /></a>
             <img src="../../img/02_2.jpg" alt="" />
             <img src="../../img/02_3.jpg" alt="" />
             <img src="../../img/02_4.jpg" alt="" />
             <img src="../../img/02_5.jpg" alt="" />
-            <img src="../../img/02_6.jpg" alt="" />
           </div>
           <div class="step-three" v-else>
-            <img src="../../img/03_1.jpg" alt="" />
-            <img src="../../img/03_2.jpg" alt="" />
+            <a
+              href="https://game.cryptoids.world/infinity/?c=&p="
+              target="_blank"
+              ><img src="../../img/03_1.jpg" alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -63,7 +70,7 @@ export default {
   data() {
     return {
       step: 1,
-      timer: null
+      timer: null,
     };
   },
   methods: {
@@ -86,7 +93,7 @@ export default {
           this.step++;
           document.querySelector(".container").scrollTop = 0;
           if (this.timer) clearTimeout(this.timer);
-          this.timer = null
+          this.timer = null;
         }, 500);
       }
     },
@@ -127,13 +134,15 @@ export default {
   flex: 1;
   text-align: center;
   text-decoration: none;
+  font-size: 3.5vw;
 }
 
 .tab-item.active {
-  font-weight: 600;
+  font-weight: 700;
   color: #ffffff;
   border-radius: 20px;
   background: #efb088;
+  font-size: 3.5vw;
 }
 
 .step {

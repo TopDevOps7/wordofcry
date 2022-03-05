@@ -216,7 +216,10 @@
         </div>
         <div class="swiper-slide">
           <div class="body-3">
-            <div class="words">EARN CRYPTOCURRENCY<br />REWARDS BY PLAYING</div>
+            <div class="words">
+              EARN CRYPTOCURRENCY<br />REWARDS<br />
+              BY PLAYING
+            </div>
             <div class="game-video">
               <div class="video-body-1" @click="playOrPause">
                 <video
@@ -530,7 +533,7 @@
                 <div class="content">
                   <div class="left">
                     <div class="footer-nav">
-                      <a href="#">Cryptoids</a>
+                      <a href="/story.html">Cryptoids</a>
                       <div style="margin-top: 10px; margin-bottom: 10px">
                         <a href="/story.html#0">Story</a>
                       </div>

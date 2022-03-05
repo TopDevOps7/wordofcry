@@ -410,8 +410,8 @@
         }
 
         .address {
-          font-size: 2.93333vw;
-          font-weight: 700;
+          font-size: 3.33333vw;
+          font-weight: 900;
           color: #245588;
           position: relative;
           right: -45px;
@@ -436,9 +436,9 @@
 
         .code {
           display: inline-block;
-          margin-right: 8px;
           line-height: 0.7244vw;
           font-size: 2.72083vw;
+          font-weight: 500;
           color: #fff;
           vertical-align: middle;
         }
@@ -456,6 +456,11 @@
     }
 
     .body-1 {
+      .words {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+      }
       .doll-bg {
         margin-top: calc(1.38 * var(--vh, 1vh));
         width: auto;
@@ -493,6 +498,9 @@
           border-width: 2px;
 
           .pp {
+            font-family: Ubuntu;
+            font-style: normal;
+            font-weight: bold;
             margin: 0;
             font-size: calc(2.39 * var(--vh, 1vh));
           }
@@ -501,8 +509,14 @@
     }
 
     .body-2 {
+      .words {
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+        font-size: calc(6 * var(--vh, 1vh));
+      }
       .market-button {
-        margin: calc(16 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
+        margin: calc(17 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
         width: 61.47vw;
         height: 13.74vw;
         line-height: 1;
@@ -513,6 +527,7 @@
         border-width: 2px;
 
         .pp {
+          font-family: Ubuntu;
           margin: 0;
           font-size: calc(2.39 * var(--vh, 1vh));
         }
@@ -526,23 +541,47 @@
       justify-content: center;
       align-items: center;
       .video-body-1 {
-        margin-top: 25px;
-        width: 90vw;
-        height: calc(23.11 * var(--vh, 1vh));
+        margin-top: 14vh;
+        width: 100%;
+        padding-top: 56.25%;
+        height: 0px;
+        position: relative;
+        video {
+          width: 95% !important;
+          height: 75% !important;
+          position: absolute;
+          top: 0;
+          left: 10px;
+        }
       }
       .video-body-2 {
-        width: 90vw;
-        height: calc(23.11 * var(--vh, 1vh));
-        margin-top: 10px;
+        width: 100%;
+        padding-top: 56.25%;
+        height: 0px;
+        position: relative;
+        margin-top: -7.6vh;
+        video {
+          width: 95% !important;
+          height: 75% !important;
+          position: absolute;
+          top: 0;
+          left: 10px;
+        }
       }
     }
 
     .body-3 {
       .words {
-        font-size: calc(5 * var(--vh, 1vh));
+        font-size: calc(5.2 * var(--vh, 1vh));
         padding-left: 0vw;
         padding-right: 0vw;
         line-height: 0.9;
+        font-family: Ubuntu;
+        font-style: normal;
+        font-weight: bold;
+      }
+      .label {
+        margin-top: -2.5vh;
       }
       .game-video {
         position: relative;
@@ -552,19 +591,37 @@
         justify-content: center;
         align-items: center;
         .video-body-1 {
-          margin-top: 50px;
-          width: 90vw;
-          height: calc(20.11 * var(--vh, 1vh));
+          margin-top: 22vh;
+          width: 100%;
+          padding-top: 56.25%;
+          height: 0px;
+          position: relative;
+          video {
+            width: 95% !important;
+            height: 70% !important;
+            position: absolute;
+            top: 0;
+            left: 10px;
+          }
         }
         .video-body-2 {
-          width: 90vw;
-          height: calc(20.11 * var(--vh, 1vh));
-          margin-top: 10px;
+          width: 100%;
+          padding-top: 56.25%;
+          height: 0px;
+          position: relative;
+          margin-top: -9.7vh;
+          video {
+            width: 95% !important;
+            height: 70% !important;
+            position: absolute;
+            top: 0;
+            left: 10px;
+          }
         }
       }
       .market-button {
         position: static;
-        margin: calc(16.396 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
+        margin: calc(18.396 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
         width: 61.47vw;
         height: 13.74vw;
         line-height: 1;
@@ -577,6 +634,8 @@
         .pp {
           margin: 0;
           font-size: calc(2.39 * var(--vh, 1vh));
+          font-family: Ubuntu;
+          font-style: normal;
         }
       }
       .flying-coin {
@@ -610,14 +669,17 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1vh;
+        margin-top: 1vh;
       }
       .icons_moblie > .third_imagefield {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 1vh;
       }
       .doll {
-        bottom: calc(-6.16 * var(--vh, 1vh));
+        bottom: calc(-9.16 * var(--vh, 1vh));
         width: 92.5vw;
       }
     }
@@ -678,7 +740,7 @@
           }
           a {
             display: block;
-            width: 45%;
+            width: 37%;
             height: auto;
             flex-shrink: 0;
             flex-grow: 0;
@@ -686,7 +748,7 @@
             justify-content: center;
             margin: calc(0.5 * var(--vh, 1vh)) 0;
             &.half {
-              width: 25%;
+              width: 23%;
             }
             &.mobile-order-1 {
               order: 1;
@@ -707,12 +769,12 @@
             }
             &.mobile-order-5 {
               order: 5;
-              width: 45%;
+              width: 37%;
               margin: calc(0.5 * var(--vh, 1vh)) 0;
             }
             &.mobile-order-6 {
               order: 6;
-              width: 45%;
+              width: 37%;
               display: grid;
               justify-content: center;
               align-items: center;
@@ -765,10 +827,15 @@
               .footer-nav {
                 margin-top: calc(2.48 * var(--vh, 1vh));
                 margin-left: 0;
+
                 a {
-                  font-weight: 500;
-                  font-size: calc(2.29 * var(--vh, 1vh));
+                  font-size: calc(2.6 * var(--vh, 1vh));
                   line-height: calc(2.48 * var(--vh, 1vh));
+                  font-family: Maven Pro;
+                  font-style: normal;
+                  font-weight: bold;
+                  text-transform: uppercase;
+                  color: #fff;
                 }
                 > div {
                   display: none;
@@ -826,7 +893,7 @@
           }
 
           .footer-eggs {
-            bottom: calc(-2.48 * var(--vh, 1vh));
+            bottom: calc(-3.18 * var(--vh, 1vh));
             a {
               width: 12vw;
               margin: 0 1.44vw;
@@ -853,6 +920,7 @@
               height: calc(32.55 * var(--vh, 1vh));
               margin: 0 !important;
               z-index: 1 !important;
+              margin-top: 5vh;
               .dolls-name {
                 font-size: calc(2.37 * var(--vh, 1vh));
                 line-height: calc(2.11 * var(--vh, 1vh));
@@ -860,17 +928,31 @@
                 > div:first-child {
                   font-weight: bold;
                 }
+                .charter_span {
+                  font-family: Maven Pro;
+                  font-style: normal;
+                  font-weight: bold;
+                  font-size: calc(3.53 * var(--vh, 1vh));
+                  margin-top: 5vh;
+                }
+                .charter_text {
+                  font-family: Maven Pro;
+                  font-style: normal;
+                  font-weight: 400;
+                  margin-top: 5px;
+                  font-size: calc(3 * var(--vh, 1vh));
+                }
               }
               .doll-pic {
-                margin-top: calc(4.42 * var(--vh, 1vh));
+                margin-top: calc(5.42 * var(--vh, 1vh));
                 img {
-                  height: calc(23.914 * var(--vh, 1vh));
+                  height: calc(30.914 * var(--vh, 1vh));
                 }
               }
             }
           }
           .team-swiper-pagination {
-            margin: calc(9.625 * var(--vh, 1vh)) auto;
+            margin: calc(14.625 * var(--vh, 1vh)) auto;
             display: flex;
             width: 100%;
             justify-content: center;
@@ -887,8 +969,11 @@
           }
         }
         .words {
-          margin-top: calc(6.2 * var(--vh, 1vh));
-          font-size: calc(5.8 * var(--vh, 1vh));
+          margin-top: calc(4.2 * var(--vh, 1vh)) !important;
+          font-size: calc(6.5 * var(--vh, 1vh));
+          font-family: Ubuntu;
+          font-style: normal;
+          font-weight: bold;
         }
       }
     }
@@ -989,14 +1074,14 @@
 
   .img-1 {
     bottom: calc(25.68 * var(--vh, 1vh));
-    width: 56.39vw;
-    left: -13.61vw;
+    width: 60.3vw !important;
+    left: -14.4vw;
   }
 
   .img-2 {
     bottom: calc(24.15 * var(--vh, 1vh));
-    width: 66.3vw;
-    right: -23.7vw;
+    width: 70.3vw !important;
+    right: -25vw;
   }
 
   .img-3 {
@@ -1066,13 +1151,13 @@
     width: calc(6.19 * var(--vh, 1vh));
   }
   .img-1 {
-    bottom: calc(25.68 * var(--vh, 1vh));
+    bottom: calc(20 * var(--vh, 1vh));
     width: calc(29 * var(--vh, 1vh));
     z-index: -2;
   }
 
   .img-2 {
-    bottom: calc(24.15 * var(--vh, 1vh));
+    bottom: calc(20 * var(--vh, 1vh));
     width: calc(34.18 * var(--vh, 1vh));
   }
 

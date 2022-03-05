@@ -119,6 +119,7 @@
           <div class="scholar-box">
             <div class="scholar-box__inner">
               <img src="../../img/roll.jpg" alt="" />
+              <img src="../../img/roll.jpg" alt="" />
             </div>
           </div>
           <img src="../../img/cryptoid-10.png" alt="" class="cryptoid-1" />
@@ -130,8 +131,8 @@
             We have developed an advanced rental management system which allows
             for easier account leasing and scholar gameplay.
             <br />
-            You can participate in a variety of ways:
           </div>
+          <p class="medium_text">You can participate in a variety of ways:</p>
           <ul class="page-body-list">
             <li>Purchasing of Cryptoids for Scholar accounts</li>
             <li>Starting a breeding business by purchasing $CAC/$CGC</li>
