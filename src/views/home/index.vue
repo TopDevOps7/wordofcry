@@ -1151,6 +1151,11 @@ export default {
         //goto footer 1
         this.isFooter2 = false;
         this.mySwiper.enable();
+        $(".nav-container>.nav>ul>li>a").css({
+          color: "#2e2f5b",
+          "font-family": "Ubuntu",
+        });
+        $(".header-play-logo>a>div>div").css({ color: "#2e2f5b" });
       } else {
         // goto footer 2
         this.isFooter2 = true;
