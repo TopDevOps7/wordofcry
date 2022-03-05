@@ -217,7 +217,7 @@
         <div class="swiper-slide">
           <div class="body-3">
             <div class="words">
-              EARN CRYPTOCURRENCY<br />REWARDS<br />
+              EARN CRYPTOCURRENCY<br />REWARDS<br class="regard_br" />
               BY PLAYING
             </div>
             <div class="game-video">

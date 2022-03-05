@@ -1143,6 +1143,19 @@ body {
     bottom: 0;
     left: 0;
     z-index: 2;
+
+    .words {
+      font-size: 5vw;
+      font-family: Ubuntu;
+      font-style: normal;
+      font-weight: bold;
+      .regard_br {
+        display: none;
+      }
+    }
+    .game-video {
+      margin-top: 3.5vw;
+    }
     .market-button {
       position: relative;
       top: 0;
