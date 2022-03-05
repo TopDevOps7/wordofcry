@@ -516,7 +516,7 @@
         font-size: calc(6 * var(--vh, 1vh));
       }
       .market-button {
-        margin: calc(17 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
+        margin: calc(22 * var(--vh, 1vh)) auto calc(3.866 * var(--vh, 1vh));
         width: 61.47vw;
         height: 13.74vw;
         line-height: 1;
@@ -533,7 +533,9 @@
         }
       }
     }
-
+    .label {
+      display: none;
+    }
     .game-video {
       margin-top: calc(10.85 * var(--vh, 1vh));
       height: calc(26.11 * var(--vh, 1vh));
@@ -541,7 +543,7 @@
       justify-content: center;
       align-items: center;
       .video-body-1 {
-        margin-top: 14vh;
+        margin-top: 18vh;
         width: 100%;
         padding-top: 56.25%;
         height: 0px;
